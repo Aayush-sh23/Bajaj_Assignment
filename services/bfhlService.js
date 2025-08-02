@@ -18,9 +18,9 @@ exports.processInput = (data) => {
     } else {
       special_characters.push(item);
     }
-  });
+  }); 
 
-  const reversedAlpha = alphaConcat.split("").reverse();
+  const reversedAlpha = alphaConcat.split("").reverse();// reverse the alphabet
   const concat_string = reversedAlpha
     .map((ch, i) => (i % 2 === 0 ? ch.toUpperCase() : ch.toLowerCase()))
     .join("");
